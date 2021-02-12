@@ -1,0 +1,17 @@
+<div class="container">
+    <h3>About</h3>
+    <hr>
+</div>
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div *ngFor="let interest of interests" class='col-md-auto'>
+            <div class="container">
+                <button type="button" class="btn btn-primary">
+                    {{interest}}
+                </button>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
