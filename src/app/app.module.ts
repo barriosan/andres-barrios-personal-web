@@ -1,30 +1,34 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { AppRoutingModule } from './app-routing.module';
 
 // Components
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { IntroComponent } from './components/intro/intro.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SkillsComponent } from './components/skills/skills.component';
-import { AboutComponent } from './components/about/about.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NavbarComponent } from './pages/home/navbar/navbar.component';
+import { IntroComponent } from './pages/home/intro/intro.component';
+import { ProjectsComponent } from './pages/home/projects/projects.component';
+import { AboutComponent } from './pages/home/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     NavbarComponent,
     IntroComponent,
     ProjectsComponent,
-    SkillsComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
