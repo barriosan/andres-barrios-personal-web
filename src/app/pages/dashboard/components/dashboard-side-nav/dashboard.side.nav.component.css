@@ -1,0 +1,26 @@
+#sidebar {
+    height: 100%;
+}
+
+/* @media (max-width: 575px) {
+    #sidebar {
+        margin-left: -200px;
+    }
+    #sidebar.hidden {
+        margin-left: 0;
+    }
+} */
+
+a, a:hover, a:focus {
+color: inherit;
+}
+
+#sidebar ul li a {
+padding: 15px;
+display: block;
+width: 100%;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
